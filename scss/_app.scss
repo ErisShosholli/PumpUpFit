@@ -1,0 +1,122 @@
+.app-main-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 10px;
+
+  .main-heading {
+    font-size: 4.5rem;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+
+    span {
+      color: #9c23d7;
+    }
+  }
+}
+.image-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .ios {
+    width: 200px;
+    height: 200px;
+  }
+
+  .android {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.second-container {
+  background-image: linear-gradient(to top right, white, #9c23d7);
+  display: flex;
+  justify-content: space-around;
+
+  .ios {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
+
+  .android {
+    width: 200px;
+    height: 200px;
+  }
+
+  h2 {
+    padding-top: 50%;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    color: black;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    color: rgb(75 75 76);
+  }
+
+  .app {
+    height: 700px;
+    transform: rotate(-25deg);
+  }
+}
+
+.third-container {
+  display: flex;
+  justify-content: space-evenly;
+  background-image: linear-gradient(to top right, aqua, white);
+  .second-container-content {
+    h2 {
+      padding-top: 50%;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      color: white;
+    }
+    p {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      margin-top: 1rem;
+      color: white;
+    }
+  }
+  .activity-img {
+    height: 700px;
+    transform: rotate(25deg);
+  }
+}
+
+.fourth-container {
+  background-image: linear-gradient(to top right, white, #9c23d7);
+  display: flex;
+  justify-content: space-around;
+  .sleep-img {
+    height: 700px;
+    transform: rotate(-25deg);
+  }
+
+  .third-container-content {
+    h2 {
+      padding-top: 50%;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      font-size: 3rem;
+      line-height: 3.5rem;
+      color: black;
+    }
+
+    p {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      margin-top: 1rem;
+    }
+  }
+}

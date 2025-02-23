@@ -1,0 +1,424 @@
+.navbar {
+  background-color: #2a2c38;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar .main-h1 {
+  color: #9c23d7;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.navbar .main-h2 {
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.navbar img {
+  width: 100px;
+  height: 100px;
+}
+
+.navbar .collapse {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar .collapse a {
+  color: aqua;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.navbar .dropdown-menu {
+  background-color: #2a2c38;
+}
+
+/* Hamburger Menu */
+.navbar .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar .hamburger div {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar .collapse {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #2a2c38;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .navbar .collapse a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navbar .hamburger {
+    display: flex;
+  }
+
+  /* Show menu when active */
+  .navbar .collapse.active {
+    display: flex;
+  }
+}
+
+.main-container {
+  background-image: linear-gradient(to bottom right, #9c23d7, aqua);
+  .content {
+    display: flex;
+    justify-content: space-around;
+    .main-text {
+      h3 {
+        padding-top: 60px;
+        color: aqua;
+        font-size: 50px;
+        font-weight: bold;
+      }
+      p {
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.membership-title {
+  h3 {
+    padding-top: 20px;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgb(247 247 252);
+  }
+  p {
+    text-align: center;
+    display: block;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    --tw-text-opacity: 1;
+    color: rgb(75 75 76 / var(--tw-text-opacity));
+    background-color: rgb(247 247 252);
+  }
+}
+.membership-content {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(247 247 252);
+
+  .card {
+    --tw-shadow: 0 16px 32px 0px rgba(4, 16, 35, 0.08);
+    --tw-shadow-colored: 0 16px 32px 0px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    display: flex;
+    margin-top: 200px;
+    background-image: linear-gradient(to bottom right, #9c23d7, black);
+    color: white;
+    margin-bottom: 20px;
+    .btn {
+      border: 1px solid white;
+      border-radius: 9999px;
+      background-color: white;
+      color: #9c23d7;
+      margin-left: 60%;
+      font-weight: bold;
+    }
+    .card-title {
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 2rem;
+      color: aqua;
+    }
+    .card-text {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      unicode-bidi: isolate;
+    }
+  }
+}
+
+.main-image {
+  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+  padding-top: 20px;
+}
+.welcome-heading {
+  font-size: 4rem;
+  line-height: 4rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+}
+
+span {
+  color: #9c23d7;
+  text-align: center;
+}
+.content-container {
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-around;
+
+  display: flex;
+  justify-content: space-around;
+  img {
+    width: 46px;
+    height: 46px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  p {
+    color: rgb(75 75 76);
+    line-height: 1.5rem;
+    font-size: 1.125rem;
+  }
+
+  a {
+    color: #9c23d7;
+  }
+}
+
+.app-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(to bottom right, aqua, #9c23d7);
+  .container-text {
+    padding-top: 200px;
+    font-size: 48px;
+    font-weight: 700;
+    justify-content: space-around;
+    span {
+      color: #9c23d7;
+    }
+    .container-paragraph {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+    a {
+      font-size: 1.125rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #9c23d7;
+      border: 1px solid white;
+      background-color: whitesmoke;
+      border-radius: 1.75rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  img {
+    transform: rotate(45deg);
+  }
+}
+
+.get-started {
+  background-color: rgb(247 247 252);
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+  }
+
+  p {
+    color: rgb(75 75 76);
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+  }
+}
+
+.main-footer {
+  text-align: center;
+  font-weight: bold;
+  color: #9c23d7;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    .container-fluid {
+      .main-h1 {
+        font-size: 24px;
+      }
+      .main-h2 {
+        font-size: 18px;
+      }
+    }
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .main-container .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .main-text {
+      h3,
+      p {
+        font-size: 36px;
+        padding-top: 30px;
+      }
+    }
+  }
+
+  .membership-content {
+    flex-direction: column;
+    align-items: center;
+
+    .card {
+      width: 90%;
+      margin-top: 50px;
+
+      .btn {
+        margin-left: 40%;
+      }
+    }
+  }
+
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    > div {
+      margin-bottom: 30px;
+    }
+  }
+
+  .app-container {
+    flex-direction: column;
+    text-align: center;
+
+    .container-text {
+      padding-top: 50px;
+      font-size: 36px;
+
+      .container-paragraph {
+        padding: 0 20px;
+      }
+    }
+
+    img {
+      transform: rotate(0);
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  .welcome-heading {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    .container-fluid {
+      .main-h1 {
+        font-size: 20px;
+      }
+      .main-h2 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .main-container .content {
+    .main-text {
+      h3,
+      p {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .membership-title {
+    h3 {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  .app-container {
+    .container-text {
+      font-size: 28px;
+
+      a {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+
+  .get-started {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .welcome-heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .content-container {
+    h3 {
+      font-size: 1.25rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}

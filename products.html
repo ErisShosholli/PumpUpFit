@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PumpUp Fit</title>
+    <!--Meta Tag-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1"
+    />
+    <!--Favicon-->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./images/favicon-32x32.png"
+    />
+    <!--Bootstrap Style Sheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <!--Cascading Style Sheet -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <h1 class="main-h1">PumpUp</h1>
+        <h2 class="main-h2">Fit</h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html.">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img src="./images/arm 1.svg" alt="" />
+    </nav>
+    <div class="gallery">
+      <div class="tshirt-main-image">
+        <img id="main-img" src="./images/product-main-img" alt="Main Image" />
+        <p id="description">Top seller this week</p>
+        <p id="size">Out of stock</p>
+        <p id="price">Out of stock</p>
+      </div>
+      <div class="thumbnails">
+        <img
+          class="thumb"
+          src="./images/all-black-tshirt"
+          alt="Thumbnail 1"
+          onclick="changeTshirtImage(this, 'All black Tee', 'L', 36)"
+        />
+        <img
+          class="thumb"
+          src="./images/black-purple-tshirt"
+          alt="Thumbnail 2"
+          onclick="changeTshirtImage(this, 'Black and purple Tee', 'M', 40)"
+        />
+        <img
+          class="thumb"
+          src="./images/black-gray-tshirt"
+          alt="Thumbnail 3"
+          onclick="changeTshirtImage(this, 'Black and gray Tee', 'XL', 45)"
+        />
+        <img
+          class="thumb"
+          src="./images/white-aqua-tshirt"
+          alt="Thumbnail 4"
+          onclick="changeTshirtImage(this, 'White and aqua Tee', 'S', 30)"
+        />
+      </div>
+    </div>
+
+    <!-- HOODIE SECTION -->
+    <div class="hoodie-gallery">
+      <div class="hoodie-main-image">
+        <img
+          id="hoodie-main-img"
+          src="./images/main-hoodie-img"
+          alt="Main Hoodie Image"
+        />
+        <p id="hoodie-description">Top seller this week</p>
+        <p id="hoodie-size">Out of stock</p>
+        <p id="hoodie-price">Out of stock</p>
+      </div>
+      <div class="hoodie-thumbnails">
+        <img
+          class="hoodie-thumb"
+          src="./images/gray-black-green-hoodie"
+          alt="Hoodie Thumbnail 1"
+          onclick="changeHoodieImage(this, 'Gray, Black and  Green three color mix', 'M', 50)"
+        />
+        <img
+          class="hoodie-thumb"
+          src="./images/white-coffe-black-hoodie"
+          alt="Hoodie Thumbnail 2"
+          onclick="changeHoodieImage(this, 'White, Coffe and Black three color mix', 'L', 55)"
+        />
+        <img
+          class="hoodie-thumb"
+          src="./images/white-teal-black-hoodie"
+          alt="Hoodie Thumbnail 3"
+          onclick="changeHoodieImage(this, 'White, Teal and  Black three color mix ', 'XL', 60)"
+        />
+        <img
+          class="hoodie-thumb"
+          src="./images/black-white-gray-hoodie"
+          alt="Hoodie Thumbnail 4"
+          onclick="changeHoodieImage(this, 'Black, White and  Gray three color mix ', 'S', 45)"
+        />
+      </div>
+    </div>
+
+    <footer class="main-footer">
+      <p>© 2025 PumpUp Fit Franchising, LLC.</p>
+    </footer>
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
